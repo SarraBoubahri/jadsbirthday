@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joyeux Anniversaireee </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="particles" id="particles" aria-hidden="true"></div>
+
+<div class="container">
+  <header class="header">
+    <h1 class="title">Joyeux Anniversaire, Jaddie <3 </h1>
+    <p class="subtitle">J'ai dit non... mais bon jsuis trop gentille</p>
+  </header>
+
+  <main class="stage" id="stage" data-state="home">
+    <div class="scene">
+
+      <!-- Téléphone -->
+      <div class="phone" id="phone">
+        <div class="face front">
+          <div class="screen">
+            <div class="island"></div>
+            <div class="status"><span>9:41</span>
+              <span class="icons"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-full"></i></span>
+            </div>
+            <div class="apps" id="apps"></div>
+            <div class="dock" id="dock"></div>
+
+            <button class="claim" id="claim" type="button" aria-label="Réclamer le cadeau">
+              <span class="claim-icon"><i class="fas fa-gift"></i></span>
+              <strong>Tu veux ton cadeau ?</strong>
+              <small>OUIIII (jte laisse pas le choix)</small>
+            </button>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="plate"><span class="lens"></span><span class="lens"></span><span class="lens"></span></div>
+          <i class="fab fa-apple apple"></i>
+        </div>
+      </div>
+
+      <!-- Prototype de coque -->
+      <div class="case" id="case">
+        <div class="tilt">
+          <div class="shell">
+            <i class="side l1"></i><i class="side l2"></i><i class="side r1"></i>
+            <div class="plate cut"><span class="lens"></span><span class="lens"></span><span class="lens"></span></div>
+            <div class="mag"><b> <3 </b></div>
+            <small class="tag">J'aime l'escalade </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="result" id="result">
+      <h2>Pour que tu ne pas casse pas ton tel</h2>
+      <p>T'as interet à être content</p>
+      <div class="picker" role="group" aria-label="Couleur de la coque">
+  
+          <button type="button" class="sw on" style="--a:#ff69b4;--b:#d63384" data-a="#ff69b4" data-b="#d63384" aria-label="Rose"></button>
+          <button type="button" class="sw" style="--a:#4da6ff;--b:#0052cc" data-a="#4da6ff" data-b="#0052cc" aria-label="Bleu"></button>
+          <button type="button" class="sw" style="--a:#ff4d4d;--b:#cc0000" data-a="#ff4d4d" data-b="#cc0000" aria-label="Rouge"></button>
+          <button type="button" class="sw" style="--a:#333333;--b:#000000" data-a="#333333" data-b="#000000" aria-label="Noir"></button>
+        
+      </div>
+      <button class="replay" id="replay" type="button"><i class="fas fa-rotate-left"></i> Rejouer mm si jvois pas pq</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="joke"><i class="fas fa-mobile-alt"></i> Erreur 404 : modèle de téléphone introuvable. (ouais j'ai pas retenu..)</p>
+    <p class="joke"><i class="fas fa-gift"></i> Maiiiis la coque est là !</p>
+    <p class="joke"><i class="fas fa-heart"></i> 100% virtuelle. Comme ta patience. (c'etait gratuit)</p>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
